@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+    /* background: radial-gradient() implies gradient colour. */
+    /* percentage implies 'sharp stop position', i.e. the sharp colour will be stopped at 0% & then the gradient effect will be produced. */
+
+    /* circle implies the shape of the gradient colour as circle. */
+    /* By default this shape is ellipse. */
+
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%);
+}
+
+.container{
+    margin-top: 2rem;
+
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%);
+
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px wheat;
+}
+
+#weatherwidget{
+    /* border radius is given much so that the card above it is displayed with its default borders, otherwise the weatherwidget's sharp borders will be displayed. */
+    border-radius: 50px;
+    background-color: aqua;
+}
+
+.card .card-subtitle{
+    font-size: 4rem;
+}
+
+.units a{
+    text-decoration: none;
+    color: #666;
+
+}
+
+.units a.active{
+    color: #ccc;
+}
+
+.date{
+    background-color: rgb(19, 235, 170); 
+    padding: 4px 10px; 
+    margin-top: 0.2rem; 
+    border-radius: 5px;
+    display: inline-block;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.upperText h5{
+    font-size: x-large;
+}
+
+.temp{
+    font-size: 6rem;
+}
+
+.innerText{
+    font-size: x-large;
+}
+
+@media screen and (max-width: 480px) {
+    .upperText h5{
+        font-size: large;
+    }
+    
+    .temp{
+        font-size: 4rem;
+    }
+
+    .innerText{
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .upperText h5{
+        font-size: 1rem;
+    }
+    
+    .temp{
+        font-size: 3rem;
+    }
+
+    .innerText{
+        font-size: 1rem;
+    }
+}
