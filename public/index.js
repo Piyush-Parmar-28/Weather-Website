@@ -124,6 +124,10 @@ function showWeather(data, unit) {
     else{
         var active1= ""
         var active2= "active"
+
+        // Changing the wind speed from miles/hour to m/sec
+        let speed = data.wind.speed*0.44704;
+        data.wind.speed= speed.toFixed(2);
     }
 
     // Converting visibility data into Km
